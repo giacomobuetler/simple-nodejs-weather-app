@@ -14,7 +14,6 @@ app.get('/', function (req, res) {
 })
 
 app.post('/', function (req, res) {
-  let apiKey = 'c65dd64f4bf1e88063c83bca8e280df2'
   let city = req.body.city;
   let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`
 
